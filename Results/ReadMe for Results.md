@@ -1,0 +1,351 @@
+# README FOR RESULTS
+- The training info, which is the running results of `gpt_model.py`, is saved in `models/training_info.json`, `models/bert_score_evaluation_info.json`, and `models/GPT2_best_Info.txt`.
+- The `results.json` is combined by `models/training_info.json` and `models/bert_score_evaluation_info.json`. It can be treated as the final result of the model's running results.
+- The best model's performance is shown in the 4th and 5th cells' results in `evaluation.ipynb`, (## 4 Get Model Answers for test set and BERT SCORE Evaluation) and (## 5 EVALUATION FOR BLEU).
+
+# The content of results.json
+```
+[
+    {
+        "epoch": 1,
+        "train_time": "54m 20s",
+        "train_loss": 3.660306632578193,
+        "bert_score": 0.5535060167312622,
+        "best_bert_score": 0.5535060167312622,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 2,
+        "train_time": "53m 36s",
+        "train_loss": 3.3505166824188066,
+        "bert_score": 0.5551387071609497,
+        "best_bert_score": 0.5551387071609497,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 3,
+        "train_time": "53m 20s",
+        "train_loss": 3.258897390724891,
+        "bert_score": 0.5606464147567749,
+        "best_bert_score": 0.5606464147567749,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 4,
+        "train_time": "53m 19s",
+        "train_loss": 3.2071923815236634,
+        "bert_score": 0.5622338056564331,
+        "best_bert_score": 0.5622338056564331,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 5,
+        "train_time": "53m 20s",
+        "train_loss": 3.172341417046756,
+        "bert_score": 0.5625004768371582,
+        "best_bert_score": 0.5625004768371582,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 6,
+        "train_time": "55m 38s",
+        "train_loss": 3.1463054955975323,
+        "bert_score": 0.5632643103599548,
+        "best_bert_score": 0.5632643103599548,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 7,
+        "train_time": "54m 58s",
+        "train_loss": 3.1259413420184345,
+        "bert_score": 0.5648605227470398,
+        "best_bert_score": 0.5648605227470398,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 8,
+        "train_time": "53m 39s",
+        "train_loss": 3.1092844639779513,
+        "bert_score": 0.5653800368309021,
+        "best_bert_score": 0.5653800368309021,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 9,
+        "train_time": "53m 18s",
+        "train_loss": 3.095314276285949,
+        "bert_score": 0.5665077567100525,
+        "best_bert_score": 0.5665077567100525,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 10,
+        "train_time": "53m 16s",
+        "train_loss": 3.083150946923519,
+        "bert_score": 0.5646110773086548,
+        "best_bert_score": 0.5665077567100525,
+        "no_improvement_count": 1
+    },
+    {
+        "epoch": 11,
+        "train_time": "53m 16s",
+        "train_loss": 3.07262609327603,
+        "bert_score": 0.5660284757614136,
+        "best_bert_score": 0.5665077567100525,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 12,
+        "train_time": "53m 36s",
+        "train_loss": 3.0639544701801906,
+        "bert_score": 0.5657135248184204,
+        "best_bert_score": 0.5665077567100525,
+        "no_improvement_count": 1
+    },
+    {
+        "epoch": 13,
+        "train_time": "55m 49s",
+        "train_loss": 3.0550394208733516,
+        "bert_score": 0.5663096308708191,
+        "best_bert_score": 0.5665077567100525,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 14,
+        "train_time": "54m 20s",
+        "train_loss": 3.0471500330530494,
+        "bert_score": 0.5649780035018921,
+        "best_bert_score": 0.5665077567100525,
+        "no_improvement_count": 1
+    },
+    {
+        "epoch": 15,
+        "train_time": "64m 52s",
+        "train_loss": 3.0401312237237126,
+        "bert_score": 0.5670509934425354,
+        "best_bert_score": 0.5670509934425354,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 16,
+        "train_time": "53m 32s",
+        "train_loss": 3.0342645446424497,
+        "bert_score": 0.5695754289627075,
+        "best_bert_score": 0.5695754289627075,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 17,
+        "train_time": "53m 49s",
+        "train_loss": 3.0276851796700632,
+        "bert_score": 0.5658336281776428,
+        "best_bert_score": 0.5695754289627075,
+        "no_improvement_count": 1
+    },
+    {
+        "epoch": 18,
+        "train_time": "53m 46s",
+        "train_loss": 3.021990781931801,
+        "bert_score": 0.5664907097816467,
+        "best_bert_score": 0.5695754289627075,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 19,
+        "train_time": "53m 11s",
+        "train_loss": 3.016639978912469,
+        "bert_score": 0.56673663854599,
+        "best_bert_score": 0.5695754289627075,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 20,
+        "train_time": "53m 11s",
+        "train_loss": 3.011827934990362,
+        "bert_score": 0.5667557716369629,
+        "best_bert_score": 0.5695754289627075,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 21,
+        "train_time": "53m 10s",
+        "train_loss": 3.0071243952553806,
+        "bert_score": 0.5639938712120056,
+        "best_bert_score": 0.5695754289627075,
+        "no_improvement_count": 1
+    },
+    {
+        "epoch": 22,
+        "train_time": "53m 8s",
+        "train_loss": 3.002878945694042,
+        "bert_score": 0.5664730072021484,
+        "best_bert_score": 0.5695754289627075,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 23,
+        "train_time": "52m 36s",
+        "train_loss": 2.9993003381163144,
+        "bert_score": 0.5681266188621521,
+        "best_bert_score": 0.5695754289627075,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 24,
+        "train_time": "52m 4s",
+        "train_loss": 2.9950037881745444,
+        "bert_score": 0.5663914680480957,
+        "best_bert_score": 0.5695754289627075,
+        "no_improvement_count": 1
+    },
+    {
+        "epoch": 25,
+        "train_time": "52m 2s",
+        "train_loss": 2.991124558876931,
+        "bert_score": 0.5680095553398132,
+        "best_bert_score": 0.5695754289627075,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 26,
+        "train_time": "52m 2s",
+        "train_loss": 2.9874958914178653,
+        "bert_score": 0.5671756267547607,
+        "best_bert_score": 0.5695754289627075,
+        "no_improvement_count": 1
+    },
+    {
+        "epoch": 27,
+        "train_time": "52m 1s",
+        "train_loss": 2.984152035355975,
+        "bert_score": 0.5655390620231628,
+        "best_bert_score": 0.5695754289627075,
+        "no_improvement_count": 2
+    },
+    {
+        "epoch": 28,
+        "train_time": "52m 1s",
+        "train_loss": 2.9808257532744484,
+        "bert_score": 0.5696188807487488,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 29,
+        "train_time": "52m 0s",
+        "train_loss": 2.9775608985847457,
+        "bert_score": 0.564426839351654,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 1
+    },
+    {
+        "epoch": 30,
+        "train_time": "52m 14s",
+        "train_loss": 2.9745195884904367,
+        "bert_score": 0.5670651793479919,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 31,
+        "train_time": "52m 0s",
+        "train_loss": 2.971753926073969,
+        "bert_score": 0.5659558773040771,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 1
+    },
+    {
+        "epoch": 32,
+        "train_time": "52m 1s",
+        "train_loss": 2.9688615643885976,
+        "bert_score": 0.5678423643112183,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 33,
+        "train_time": "52m 2s",
+        "train_loss": 2.96617674360006,
+        "bert_score": 0.5651036500930786,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 1
+    },
+    {
+        "epoch": 34,
+        "train_time": "52m 1s",
+        "train_loss": 2.96352754325251,
+        "bert_score": 0.567192018032074,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 35,
+        "train_time": "52m 19s",
+        "train_loss": 2.9609537818941174,
+        "bert_score": 0.5681309700012207,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 36,
+        "train_time": "52m 9s",
+        "train_loss": 2.9583305954473147,
+        "bert_score": 0.5684045553207397,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 37,
+        "train_time": "53m 10s",
+        "train_loss": 2.9565865290215703,
+        "bert_score": 0.5669021010398865,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 1
+    },
+    {
+        "epoch": 38,
+        "train_time": "52m 26s",
+        "train_loss": 2.9538528692747907,
+        "bert_score": 0.5672438144683838,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 39,
+        "train_time": "52m 25s",
+        "train_loss": 2.9514625213756873,
+        "bert_score": 0.5683093667030334,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 0
+    },
+    {
+        "epoch": 40,
+        "train_time": "52m 26s",
+        "train_loss": 2.948989239042375,
+        "bert_score": 0.5677816867828369,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 1
+    },
+    {
+        "epoch": 41,
+        "train_time": "52m 29s",
+        "train_loss": 2.946883476328455,
+        "bert_score": 0.567591667175293,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 2
+    },
+    {
+        "epoch": 42,
+        "train_time": "52m 26s",
+        "train_loss": 2.9448354789907225,
+        "bert_score": 0.565373957157135,
+        "best_bert_score": 0.5696188807487488,
+        "no_improvement_count": 3
+    }
+]
+```
+
+# The best model's performance
+The best model: Epoch 28 Model
+BERT Score on test set = 0.572730
+BLEU-4 Score on test set = 0.008305
